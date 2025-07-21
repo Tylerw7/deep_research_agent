@@ -7,7 +7,7 @@ load_dotenv(override=True)
 
 async def run(query: str):
     async for chunk in ResearchManager().run(query):
-        yield chunk
+        yield chunk 
 
 
 with gr.Blocks(theme=gr.themes.Default(primary_hue="sky")) as ui:
